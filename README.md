@@ -7,7 +7,7 @@ load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
 git_repository(
     name = "com_github_3rdparty_bazel_rules_picojson",
-    commit = "549d359a4d5becbe6c033bd62626ecb435daf169",
+    commit = "9196903bf30bd850cc0713d1c660d4755fee7a9b",
     remote = "https://github.com/3rdparty/bazel-rules-picojson",
 )
 
