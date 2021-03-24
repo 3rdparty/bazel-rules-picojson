@@ -1,6 +1,6 @@
 # Bazel build rules for picojson
 
-To use these rules, add the following to your `WORKSPACE` file:
+To use these rules, add the following to your `WORKSPACE` (or `WORKSPACE.bazel`) file:
 
 ```bazel
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
@@ -12,7 +12,7 @@ git_repository(
     shallow_since = "1616624809 -0700",
 )
 
-load("@com_github_3rdparty_bazel_rules_picojson//:bazel/picojson.bzl", "picojson_deps")
+load("@com_github_3rdparty_bazel_rules_picojson//bazel:deps.bzl", "picojson_deps")
 
 picojson_deps()
 ```
