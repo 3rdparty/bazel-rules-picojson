@@ -15,7 +15,7 @@ def repos():
     if "com_github_3rdparty_bazel_rules_picojson" not in native.existing_rules():
         git_repository(
             name = "com_github_3rdparty_bazel_rules_picojson",
-            commit = "",
+            commit = "a7ec61e4282d4a237debca8ae274b47abd05a966",
             remote = "https://github.com/3rdparty/bazel-rules-picojson",
-            shallow_since = " -0700",
+            shallow_since = "1616710201 -0700",
         )
