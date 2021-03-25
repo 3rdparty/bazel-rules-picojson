@@ -1,1 +1,10 @@
-# BUILD file as required by Bazel.
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "picojson",
+    visibility = ["//visibility:public"],
+    includes = ["."], # NOTE: added so we can include with angle brackets.
+    hdrs = [
+        "picojson.h",
+    ],
+)
