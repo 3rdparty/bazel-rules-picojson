@@ -5,7 +5,7 @@
 # https://github.com/3rdparty/bazel-rules-picojson repository. If you
 # encounter it anywhere else it is because it has been copied there in
 # order to simplify adding transitive dependencies. If you want a
-# different version of bazel-rules-picojsonf follow the Bazel build
+# different version of bazel-rules-picojson follow the Bazel build
 # instructions at https://github.com/3rdparty/bazel-rules-picojson.
 ########################################################################
 
@@ -15,8 +15,8 @@ def repos(repo_mapping = {}):
     if "com_github_3rdparty_bazel_rules_picojson" not in native.existing_rules():
         git_repository(
             name = "com_github_3rdparty_bazel_rules_picojson",
-            commit = "a7ec61e4282d4a237debca8ae274b47abd05a966",
+            commit = "2021eadfacbe29d955f79d2fa546de64bd38f402",
             remote = "https://github.com/3rdparty/bazel-rules-picojson",
-            shallow_since = "1616710201 -0700",
+            shallow_since = "1616860029 -0700",
             repo_mapping = repo_mapping,
         )
