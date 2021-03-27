@@ -11,8 +11,8 @@
 
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
-def repos(repo_mapping = {}):
-    if "com_github_3rdparty_bazel_rules_picojson" not in native.existing_rules():
+def repos(external = True, repo_mapping = {}):
+    if external and "com_github_3rdparty_bazel_rules_picojson" not in native.existing_rules():
         git_repository(
             name = "com_github_3rdparty_bazel_rules_picojson",
             commit = "2021eadfacbe29d955f79d2fa546de64bd38f402",
