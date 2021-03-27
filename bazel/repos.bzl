@@ -5,17 +5,18 @@
 # https://github.com/3rdparty/bazel-rules-picojson repository. If you
 # encounter it anywhere else it is because it has been copied there in
 # order to simplify adding transitive dependencies. If you want a
-# different version of stout follow the Bazel build instructions at
-# https://github.com/3rdparty/bazel-rules-picojson.
+# different version of bazel-rules-picojsonf follow the Bazel build
+# instructions at https://github.com/3rdparty/bazel-rules-picojson.
 ########################################################################
 
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
-def repos():
+def repos(repo_mapping = {}):
     if "com_github_3rdparty_bazel_rules_picojson" not in native.existing_rules():
         git_repository(
             name = "com_github_3rdparty_bazel_rules_picojson",
             commit = "a7ec61e4282d4a237debca8ae274b47abd05a966",
             remote = "https://github.com/3rdparty/bazel-rules-picojson",
             shallow_since = "1616710201 -0700",
+            repo_mapping = repo_mapping,
         )
