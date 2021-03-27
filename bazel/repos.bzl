@@ -15,8 +15,8 @@ def repos(external = True, repo_mapping = {}):
     if external and "com_github_3rdparty_bazel_rules_picojson" not in native.existing_rules():
         git_repository(
             name = "com_github_3rdparty_bazel_rules_picojson",
-            commit = "ce94fc03189aed752931af31053f00fed3287e17",
+            commit = "aace5edcab4d5005bf8c76b14abadf4c0324504c",
             remote = "https://github.com/3rdparty/bazel-rules-picojson",
-            shallow_since = "1616860641 -0700",
+            shallow_since = "1616863002 -0700",
             repo_mapping = repo_mapping,
         )
