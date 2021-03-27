@@ -17,6 +17,6 @@ def repos(repo_mapping = {}):
             name = "com_github_3rdparty_bazel_rules_picojson",
             commit = "2021eadfacbe29d955f79d2fa546de64bd38f402",
             remote = "https://github.com/3rdparty/bazel-rules-picojson",
-            shallow_since = "1616860029 -0700",
+            shallow_since = "1616860033 -0700",
             repo_mapping = repo_mapping,
         )
